@@ -1,0 +1,29 @@
+def fibonacci(n):
+    a, b = 0, 1
+    result = []
+    
+    for _ in range(n):
+        result.append(a)
+        a, b = b, a + b
+    return result
+
+def main():
+
+    print("Welcome to the Fibonacci Sequence program!")
+
+    while True:
+        try:
+            n = int(input("Enter the value of n for which you would like to view the Fibonacci sequence: "))
+            
+            if n <= 0:
+                print("Please enter a positive integer.")
+                continue
+            break
+        except ValueError:
+            print("Invalid input! Please enter a valid integer.")
+
+    print("The first", n, "Fibonacci terms are:")
+    print(fibonacci(n))
+
+if __name__ == "__main__":
+    main()
