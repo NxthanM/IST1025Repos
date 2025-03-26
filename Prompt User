@@ -1,0 +1,13 @@
+def main():
+    # Prompt the user for their name and age
+    name = input("Please enter your name: ")
+    age = int(input("Please enter your age: "))
+    
+    # Display a personalized greeting
+    print(f"\nHello, {name}! It's nice to meet you.")
+    
+    # Display a message about the user's age
+    print(f"You are {age} years old. Welcome to the program!")
+
+if __name__ == "__main__":
+    main()
